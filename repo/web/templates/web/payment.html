@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--
+    Name: Youplay - Game Template based on Bootstrap
+    Version: 3.3.0
+    Author: nK
+    Website: https://nkdev.info/
+    Purchase: https://themeforest.net/item/youplay-game-template-based-on-bootstrap/11306207?ref=_nK
+    Support: https://nk.ticksy.com/
+    License: You must have a valid license purchased only from ThemeForest (the above link) in order to legally use the theme for your project.
+    Copyright 2018.
+-->
+    
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>icarus | Mu origin 7.0</title>
+
+    <meta name="description" content="icarus - Mu origin 7.0">
+    <meta name="keywords" content="mu, free, muorigin, webzen, muorigin2, game, mobile">
+    <meta name="author" content="icarus">
+
+    <link rel="icon" type="image/png" href="{% static 'web/images/dark/image.png' %}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion+One|Cantarell:400,400italic,700">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'web/vendor/bootstrap/dist/css/bootstrap.min.css' %}" />
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="{% static 'web/vendor/flickity/dist/flickity.min.css' %}" />
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="{% static 'web/vendor/magnific-popup/dist/magnific-popup.css' %}" />
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="{% static 'web/vendor/slider-revolution/css/settings.css' %}">
+    <link rel="stylesheet" href="{% static 'web/vendor/slider-revolution/css/layers.css' %}">
+    <link rel="stylesheet" href="{% static 'web/vendor/slider-revolution/css/navigation.css' %}">
+
+    <!-- Bootstrap Sweetalert -->
+    <link rel="stylesheet" href="{% static 'web/vendor/bootstrap-sweetalert/dist/sweetalert.css' %}" />
+
+    <!-- Social Likes -->
+    <link rel="stylesheet" href="{% static 'web/vendor/social-likes/dist/social-likes_flat.css' %}" />
+
+    <!-- FontAwesome -->
+    <script defer src="{% static 'web/vendor/font-awesome/svg-with-js/js/fontawesome-all.min.js' %}"></script>
+    <script defer src="{% static 'web/vendor/font-awesome/svg-with-js/js/fa-v4-shims.min.js' %}"></script>
+
+    <!-- Youplay -->
+    <link rel="stylesheet" href="{% static 'web/css/youplay-anime.css' %}">
+
+    <!-- RTL (uncomment this to enable RTL support) -->
+    <!-- <link rel="stylesheet" href="assets/css/youplay-rtl.min.css" /> -->
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="{% static 'web/css/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/custom-anime.css' %}">
+    <!-- END: Styles -->
+
+    <!-- jQuery -->
+    <script src="{% static 'web/vendor/jquery/dist/jquery.min.js' %}"></script>
+    
+    
+</head>
+
+
+<body>
+    
+        <!-- Preloader -->
+<div class="page-preloader preloader-wrapp">
+    
+        <img src="{% static 'web/images/logo-muicraus.png' %}" alt="">
+    
+    <div class="preloader"></div>
+</div>
+<!-- /Preloader -->
+
+    
+<!-- Navbar -->
+<nav class="navbar-youplay navbar navbar-default navbar-fixed-top navbar-small">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="off-canvas" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+                <a class="navbar-brand" href="{% url 'index' %}">
+                    이카루스
+                    <!--<img src="{% static 'web/images/logo-light.png' %}" alt="" -->
+                </a>
+            
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                        <li>
+                            <a href="{% url 'notice' %}">
+                                공지사항
+                            </a>
+                        </li>
+			<li>
+			    <a href="http://pf.kakao.com/_xkBxgTj">
+				고객센터
+			    </a>
+			</li>
+			<li>
+			    <a href="{% url 'pay'%}">
+				다이아몬드 충전하기
+			    </a>
+			</li>
+                        <li>
+                            <a href="{% url 'term' %}">
+                                이용약관
+                            </a>
+                        </li>
+
+                </ul>
+        </div>
+    </div>
+</nav>
+<!-- /Navbar -->
+
+
+
+
+    
+
+    <div class="content-wrap">
+        
+            <!--
+    Banner
+
+    Additional classes:
+        .small
+        .xsmall
+        .big
+        .full
+-->
+<section class="youplay-banner banner-top youplay-banner-parallax xsmall">
+    
+        <div class="image" data-speed="0.4">
+            <img src="{% static 'web/images/anime/icarus-notice.png' %}" alt="" class="jarallax-img">
+        </div>
+    
+
+    <div class="info">
+        <div>
+            <div class="container">
+                
+                
+                    <h1 class="h1"></h1>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /Banner -->
+    <div class="container youplay-news youplay-post">
+
+        <div class="col-md-9">
+            <!-- Post Info -->
+            <article class="news-one">
+                <!-- Post Text -->
+                <div class="description">
+                    <p>
+                        0. 이카루스의 다이아몬드 충전 가이드입니다. 아래내용을 보시고 다이아몬드 충전을 진행해주시면 됩니다. 처음에만 복잡하실테고, 한두번 이용하시면 매우 편리하게 이용하실 수 있습니다.
+                    <p>
+                    <p>
+                        1. 기존 페이팔을 통해 충전을 원활하게 이용하신 고객님께서는 기존 페이팔 충전방식을 사용해주시면 됩니다. 아래 내용은 게임 내 모바일카드 충전 방식에 대한 설명입니다. 
+                    </p>
+                    <p>
+                        2. https://www.seagm.com/ 에 접속해주세요.
+                    </p>
+                    <p>
+                        3. 접속 후 화면 상단에 있는 태극기모양또는 사람 이모티콘 클릭 +  태극기모양을 클릭해주세요. 클릭 후 Country는 South Korea. Currency는 US Dollar으로 변경해주세요.
+                    </p>
+                    <p>
+                        3.5 유저 설정을 위와같이 완료하셨으면 이번에는 REGISTER 버튼을 클릭해주세요. 
+                    </p>
+                    <p>
+                        4. Email Address라고 나와있는곳에 본인의 이메일을 적어주세요. 적어주시는 이메일은 회원가입 인증 용도로만 사용됩니다.
+                    </p>
+                    <p>
+                        5. 메일함으로 도착한 메일을 확인하시고, Verify Your Email 버튼을 클릭해주세요.
+                    </p>
+                    <p>
+                        6. Full Name에는 자신의 게임 닉네임을, Password와 Confirm Password는 유저님이 원하시는 패스워드를 적어주시면 됩니다. 패스워드는 6-20글자 사이, 대소문자, 그리고 숫자가 들어가야 합니다. 
+                    </p>
+                    <p>
+                        7. Country는 South Korea, Phone Number는 본인의 핸드폰번호를 적어주시면 됩니다.
+                    </p>
+                    <p>
+                        8. 모든 정보를 올바르게 입력하셨으면 화면 하단에 있는 REGISTER 버튼을 클릭해주심으로써 프로필 설정을 완료해주세요.
+                    </p>
+                    <p>
+                        9. 우측 상단에 있는 돋보기 버튼을 클릭해주시고 FPT CARD라고 검색하신 후 검색결과를 클릭해주세요.
+                    </p>
+                    <p>
+                        10. Choose Card Type이라고 되어있는 목록들을 보시면 여러 가격 상품들이 존재합니다.  기본적으로 200000 Gate Card는 30000다이아몬드 입니다.
+                    </p>
+                    <p>
+                        11. 1000000Gate Card는 150000다이아몬드입니다.  2000000 Gate Card는 300000다이아몬드입니다. 원하시는 다이아양에 따라 원하시는 가격 상품을 선택해주세요.
+                    </p>
+                    <p>
+                        11.5 첫 결제시에는 Billing Address를 적으라고 나오는데, 아무렇게나 적어넣으셔도 무방합니다.
+                    <p>
+                    <p>
+                        12. Paypal 버튼을 클릭하시면 Payal을 통해 다이아몬드를 구매하실 수 있고, Buy Now 버튼을 클릭하시면 마스터카드/비자카드를(체크카드, 신용카드)를 통해 손쉽게 결제하실 수 있습니다. 
+                    </p>
+                    <p>
+                        13. Paypal을 통해 결제를 진행하고싶으신 유저님들은 Buy Now버튼 밑에있는 Paypal 버튼을 클릭하셔서 결제를 진행해주세요.
+                    </p>
+                    <p>
+                        14. 비자카드 또는 마스터카드로 결제를 원하시는 유저님은 가격 상품 선택후 Buy Now 클릭, Online Payment 메뉴 클릭,  Credit/Debit Card 선택, 비자 또는 마스터 이미지 선택, 그리고 나머지 결제를 완료해주세요.
+                    </p>
+                    <p>
+                        15. 모든 결제가 완료됐으면, https://www.seagm.com/card/list 주소로 가셔서 비밀번호를 입력하시고 구입한 카드의 Card Serial과 Card Code번호를 게임 내 모바일 카드화면에 입력해주세요. 
+                    </p>
+                    <p>
+                        16. 위 과정에서 어려움을 겪는 고객님들꼐서는 고객센터로 연락 주시면 24시간 친절하게 도와드리도록 하겠습니다. 감사합니다.
+                    </p>
+                </div>
+                <!-- /Post Text -->
+
+                <!-- Post Meta -->
+                <div class="meta">
+                    <div class="item">
+                        <i class="fa fa-user meta-icon"></i>
+                        작성자 <a href="#">GM이카루스</a>
+                    </div>
+                    <div class="item">
+                        <i class="fa fa-calendar meta-icon"></i>
+                        작성시간 <a href="#">2018년 10월 26일 오후 3시</a>
+                    </div>
+                </div>
+                <!-- /Post Meta -->
+            </article>
+            <!-- /Post Info -->
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+<!-- START: Scripts -->
+<script>
+function myFunction(){
+    alert(Math.random() + " 신청 완료되었습니다. 보고계신 메세지를 캡쳐한 뒤  오픈 후  고객센터로 보내주세요.");
+}
+</script>
+
+<!-- Object Fit Polyfill -->
+<script src="{% static 'web/vendor/object-fit-images/dist/ofi.min.js' %}"></script>
+
+<!-- jQuery -->
+<script src="{% static 'web/vendor/jquery/dist/jquery.min.js' %}"></script>
+
+<!-- Hexagon Progress -->
+<script src="{% static 'web/vendor/HexagonProgress/jquery.hexagonprogress.min.js' %}"></script>
+
+<!-- Bootstrap -->
+<script src="{% static 'web/vendor/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+<!-- Jarallax -->
+<script src="{% static 'web/vendor/jarallax/dist/jarallax.min.js' %}"></script>
+
+<!-- Flickity -->
+<script src="{% static 'web/vendor/flickity/dist/flickity.pkgd.min.js' %}"></script>
+
+<!-- jQuery Countdown -->
+<script src="{% static 'web/vendor/jquery-countdown/dist/jquery.countdown.min.js' %}"></script>
+
+<!-- Moment.js -->
+<script src="{% static 'web/vendor/moment/min/moment.min.js' %}"></script>
+<script src="{% static 'web/vendor/moment-timezone/builds/moment-timezone-with-data.min.js' %}"></script>
+
+<!-- Magnific Popup -->
+<script src="{% static 'web/vendor/magnific-popup/dist/jquery.magnific-popup.min.js' %}"></script>
+
+<!-- Revolution Slider -->
+<script src="{% static 'web/vendor/slider-revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'web/vendor/slider-revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+<!-- ImagesLoaded -->
+<script src="{% static 'web/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+
+<!-- Isotope -->
+<script src="{% static 'web/vendor/isotope-layout/dist/isotope.pkgd.min.js' %}"></script>
+
+<!-- Bootstrap Validator -->
+<script src="{% static 'web/vendor/bootstrap-validator/dist/validator.min.js' %}"></script>
+
+<!-- Bootstrap Sweetalert -->
+<script src="{% static 'web/vendor/bootstrap-sweetalert/dist/sweetalert.min.js' %}"></script>
+
+<!-- Social Likes -->
+<script src="{% static 'web/vendor/social-likes/dist/social-likes.min.js' %}"></script>
+
+<!-- Youplay -->
+<script src="{% static 'web/js/youplay.min.js' %}"></script>
+<script src="{% static 'web/js/youplay-init.js' %}"></script>
+
+
+<script>
+  $(".countdown").each(function() {
+    var tz = $(this).attr('data-timezone');
+    var end = $(this).attr('data-end');
+        end = moment.tz(end, tz).toDate();
+    $(this).countdown(end, function(event) {
+        $(this).html(
+            event.strftime([
+                '<div class="countdown-item">',
+                    '<span>Days</span>',
+                    '<span><span>%D</span></span>',
+                '</div>',
+                '<div class="countdown-item">',
+                    '<span>Hours</span>',
+                    '<span><span>%H</span></span>',
+                '</div>',
+                '<div class="countdown-item">',
+                    '<span>Minutes</span>',
+                    '<span><span>%M</span></span>',
+                '</div>',
+                '<div class="countdown-item">',
+                    '<span>Seconds</span>',
+                    '<span><span>%S</span></span>',
+                '</div>'
+            ].join(''))
+        );
+    });
+  });
+</script>
+
+
+<!-- END: Scripts -->
+
+
+    
+</body>
+</html>
